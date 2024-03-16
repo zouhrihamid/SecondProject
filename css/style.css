@@ -80,6 +80,28 @@ h3{
 p{
 font-size: 14px;
 }
+
+/***** circle info + number of housings******/
+.more-accom{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+.cercle{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+}
+.fa-solid.fa-info{
+    font-size: 12px;
+    color: #0065FC;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -264,7 +286,6 @@ font-size: 14px;
     .main-container {
         width: 100%;
         padding: 1px;
-        
         box-sizing: border-box;
     }
 
@@ -276,8 +297,13 @@ font-size: 14px;
     display: flex;
     justify-content: center;
 }
-.headline{
-    margin-left: 5%;
+
+.headline p{
+    padding-left: 5%;
+}
+.headline h1{
+    padding-left: 5%;
+    padding-right: 5%;
 }
 nav{
     display: flex;
@@ -293,13 +319,13 @@ nav li:hover {
     border-bottom: 3px solid #353fc7;
 } 
 .search-bar{
-     max-width: 315px;
+     max-width: 370px;
      padding-right: 0px;
     margin-left: 5%;
-     
+  
 } 
 .search{
-    width: 70%;
+    width: 100%;
 }
 
 input[type="submit"]{
@@ -437,4 +463,12 @@ width: 85%;
     font-weight: 400;
     line-height: 18.78px;
 }
+}
+/* XSmall devices (phones, less than 366px) */
+@media (max-width: 366px) {
+    .search-bar{
+        max-width: 315px;
+               
+   } 
+
 }
